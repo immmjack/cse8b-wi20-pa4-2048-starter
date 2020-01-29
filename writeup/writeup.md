@@ -240,7 +240,60 @@ Should return `false`
 0 0 4    ->   0 0 4
 0 0 8         0 0 8
 ```
-![](./writeup_pics/default_game_playing.gif)
+
+An example game may be: 
+```
+[cs8bwi20XX@ieng6-203]:pa4: java PlayManager
+Starting a default-sized random game...
+Score: 0
+    -    -    -    -
+    -    -    -    -
+    2    -    -    2
+    -    -    -    -
+> d
+Score: 4
+    -    -    -    -
+    -    -    -    -
+    -    -    -    4
+    -    -    2    -
+> s
+Score: 4
+    -    -    -    -
+    -    -    -    -
+    -    -    -    -
+    2    -    2    4
+> a
+Score: 8
+    -    -    -    -
+    -    -    -    -
+    -    -    4    -
+    4    4    -    -
+> w
+Score: 8
+    4    4    4    -
+    -    -    -    -
+    -    -    -    -
+    -    -    -    2
+> a
+Score: 16
+    8    4    -    -
+    -    -    2    -
+    -    -    -    -
+    2    -    -    -
+> a
+Score: 16
+    8    4    -    -
+    2    -    -    2
+    -    -    -    -
+    2    -    -    -
+> s
+Score: 20
+    -    -    -    -
+    -    -    -    -
+    8    -    -    4
+    4    4    -    2
+> q
+```
 
 #### REQUIRED: `public boolean move (Direction dir)`
 This method should slide the board in the specified direction. If the sliding is done successfully, then a new random tile must be added to the board using your `addTile()` method. This method should return whether the move was successful or not. If `dir` is null, return `false` without doing anything. 
