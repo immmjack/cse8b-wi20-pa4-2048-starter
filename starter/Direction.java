@@ -26,8 +26,8 @@ public enum Direction
 
     /**
      * Returns rotationCount, the number of counterclockwise rotations 
-     * needed to rotate the game state before moving up (e.g. to 
-     * move right, rotate once then move up). 
+     * needed to rotate the game state before moving down (e.g. to 
+     * move left, rotate once then move down). 
      * 
      * @return counterclockwise rotation count
      */
