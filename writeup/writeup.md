@@ -122,7 +122,7 @@ In this method, you should return a **deep copy** of the board of GameState clas
 You **must** implement this method with the given method signature and it **must** have the specified behavior. 
 
 #### REQUIRED: `public void setBoard (int[][] newBoard)`
-In the method, you should make a deep copy of the input board and set the board of GameState class to be the deep-copied board. For `null` inputs, make no change and return immediately. This method should not make any changes to the game state other than setting the new board state. 
+In the method, you should make a deep copy of the input board and set the board of GameState class to be the deep-copied board. For `null` inputs, make no change and return immediately. The format of the input 2d array is the same as the format of the output 2d array from `getBoard()`. This method should not make any changes to the game state other than setting the new board state. 
 
 You **must** implement this method with the given method signature and it **must** have the specified behavior. 
 
@@ -208,7 +208,7 @@ One thing you might notice is that all the empty spaces on the board can be repr
 
 You **must** implement this method with the given method signature and it **must** have the specified behavior. 
 
-Here are some examples and a gif for you to visualize the basic movements of our 2048.
+Here are some examples for you to visualize the basic movements of our 2048.
 
 Example 1:
 Should return `true`
